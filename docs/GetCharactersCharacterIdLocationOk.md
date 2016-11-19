@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdLocationOk
+# EVEOpenAPI::GetCharactersCharacterIdLocationOk
 
 ## Properties
 Name | Type | Description | Notes

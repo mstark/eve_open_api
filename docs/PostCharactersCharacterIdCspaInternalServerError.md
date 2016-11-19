@@ -1,4 +1,4 @@
-# EveOpenApi::PostCharactersCharacterIdCspaInternalServerError
+# EVEOpenAPI::PostCharactersCharacterIdCspaInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

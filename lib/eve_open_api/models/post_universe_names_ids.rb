@@ -23,7 +23,7 @@ limitations under the License.
 
 require 'date'
 
-module EveOpenApi
+module EVEOpenAPI
   # ids schema
   class PostUniverseNamesIds
     # ids array
@@ -151,7 +151,7 @@ module EveOpenApi
           end
         end
       else # model
-        temp_model = EveOpenApi.const_get(type).new
+        temp_model = EVEOpenAPI.const_get(type).new
         temp_model.build_from_hash(value)
       end
     end

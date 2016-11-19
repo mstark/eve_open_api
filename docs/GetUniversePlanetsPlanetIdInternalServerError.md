@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniversePlanetsPlanetIdInternalServerError
+# EVEOpenAPI::GetUniversePlanetsPlanetIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

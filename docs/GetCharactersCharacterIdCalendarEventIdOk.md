@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdCalendarEventIdOk
+# EVEOpenAPI::GetCharactersCharacterIdCalendarEventIdOk
 
 ## Properties
 Name | Type | Description | Notes

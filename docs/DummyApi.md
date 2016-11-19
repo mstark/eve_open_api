@@ -1,4 +1,4 @@
-# EveOpenApi::DummyApi
+# EVEOpenAPI::DummyApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -24,12 +24,12 @@ Returns the most recent 50 entries for the characters wallet journal. Optionally
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::DummyApi.new
+api_instance = EVEOpenAPI::DummyApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -42,7 +42,7 @@ begin
   #Get character wallet journal
   result = api_instance.get_characters_character_id_wallets_journal(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling DummyApi->get_characters_character_id_wallets_journal: #{e}"
 end
 ```
@@ -82,12 +82,12 @@ Gets the 50 most recent transactions in a characters wallet. Optionally, takes a
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::DummyApi.new
+api_instance = EVEOpenAPI::DummyApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -99,7 +99,7 @@ begin
   #Get wallet transactions
   result = api_instance.get_characters_character_id_wallets_transactions(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling DummyApi->get_characters_character_id_wallets_transactions: #{e}"
 end
 ```
@@ -138,7 +138,7 @@ Dummy  ---  Alternate route: `/v1/corporations/{corporation_id}/wallets/`  Alter
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::DummyApi.new
+api_instance = EVEOpenAPI::DummyApi.new
 
 corporation_id = 56 # Integer | An EVE corporation ID
 
@@ -149,7 +149,7 @@ opts = {
 begin
   #Dummy Endpoint, Please Ignore
   api_instance.get_corporations_corporation_id_wallets(corporation_id, opts)
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling DummyApi->get_corporations_corporation_id_wallets: #{e}"
 end
 ```
@@ -188,7 +188,7 @@ Dummy  ---  Alternate route: `/v1/corporations/{corporation_id}/wallets/{wallet_
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::DummyApi.new
+api_instance = EVEOpenAPI::DummyApi.new
 
 corporation_id = 56 # Integer | An EVE corporation ID
 
@@ -201,7 +201,7 @@ opts = {
 begin
   #Dummy Endpoint, Please Ignore
   api_instance.get_corporations_corporation_id_wallets_wallet_id_journal(corporation_id, wallet_id, opts)
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling DummyApi->get_corporations_corporation_id_wallets_wallet_id_journal: #{e}"
 end
 ```
@@ -241,7 +241,7 @@ Dummy  ---  Alternate route: `/v1/corporations/{corporation_id}/wallets/{wallet_
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::DummyApi.new
+api_instance = EVEOpenAPI::DummyApi.new
 
 corporation_id = 56 # Integer | An EVE corporation ID
 
@@ -254,7 +254,7 @@ opts = {
 begin
   #Dummy Endpoint, Please Ignore
   api_instance.get_corporations_corporation_id_wallets_wallet_id_transactions(corporation_id, wallet_id, opts)
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling DummyApi->get_corporations_corporation_id_wallets_wallet_id_transactions: #{e}"
 end
 ```
@@ -294,7 +294,7 @@ Information on a planet  ---  Alternate route: `/v1/universe/planets/{planet_id}
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::DummyApi.new
+api_instance = EVEOpenAPI::DummyApi.new
 
 planet_id = 56 # Integer | An Eve planet ID
 
@@ -306,7 +306,7 @@ begin
   #Get planet information
   result = api_instance.get_universe_planets_planet_id(planet_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling DummyApi->get_universe_planets_planet_id: #{e}"
 end
 ```

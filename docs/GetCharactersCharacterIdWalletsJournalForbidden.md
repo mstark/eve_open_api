@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdWalletsJournalForbidden
+# EVEOpenAPI::GetCharactersCharacterIdWalletsJournalForbidden
 
 ## Properties
 Name | Type | Description | Notes

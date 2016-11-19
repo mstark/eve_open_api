@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdWalletsInternalServerError
+# EVEOpenAPI::GetCharactersCharacterIdWalletsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

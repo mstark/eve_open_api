@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdCorporationhistory200Ok
+# EVEOpenAPI::GetCharactersCharacterIdCorporationhistory200Ok
 
 ## Properties
 Name | Type | Description | Notes

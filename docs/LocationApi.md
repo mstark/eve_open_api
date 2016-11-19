@@ -1,4 +1,4 @@
-# EveOpenApi::LocationApi
+# EVEOpenAPI::LocationApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -20,12 +20,12 @@ Information about the characters current location. Returns the current solar sys
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LocationApi.new
+api_instance = EVEOpenAPI::LocationApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -37,7 +37,7 @@ begin
   #Get character location
   result = api_instance.get_characters_character_id_location(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LocationApi->get_characters_character_id_location: #{e}"
 end
 ```
@@ -76,12 +76,12 @@ Get the current ship type, name and id  ---  Alternate route: `/v1/characters/{c
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LocationApi.new
+api_instance = EVEOpenAPI::LocationApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -93,7 +93,7 @@ begin
   #Get current ship
   result = api_instance.get_characters_character_id_ship(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LocationApi->get_characters_character_id_ship: #{e}"
 end
 ```

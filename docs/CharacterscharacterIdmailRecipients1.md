@@ -1,4 +1,4 @@
-# EveOpenApi::CharacterscharacterIdmailRecipients1
+# EVEOpenAPI::CharacterscharacterIdmailRecipients1
 
 ## Properties
 Name | Type | Description | Notes

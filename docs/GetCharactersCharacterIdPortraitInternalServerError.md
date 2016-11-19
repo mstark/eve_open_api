@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdPortraitInternalServerError
+# EVEOpenAPI::GetCharactersCharacterIdPortraitInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

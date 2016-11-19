@@ -1,4 +1,4 @@
-# EveOpenApi::CalendarApi
+# EVEOpenAPI::CalendarApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -21,12 +21,12 @@ Get 50 event summaries from the calendar. If no event ID is given, the resource 
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::CalendarApi.new
+api_instance = EVEOpenAPI::CalendarApi.new
 
 character_id = 789 # Integer | The character to retrieve events from
 
@@ -39,7 +39,7 @@ begin
   #List calendar event summaries
   result = api_instance.get_characters_character_id_calendar(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling CalendarApi->get_characters_character_id_calendar: #{e}"
 end
 ```
@@ -79,12 +79,12 @@ Get all the information for a specific event  ---  Alternate route: `/v3/charact
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::CalendarApi.new
+api_instance = EVEOpenAPI::CalendarApi.new
 
 character_id = 789 # Integer | The character id requesting the event
 
@@ -98,7 +98,7 @@ begin
   #Get an event
   result = api_instance.get_characters_character_id_calendar_event_id(character_id, event_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling CalendarApi->get_characters_character_id_calendar_event_id: #{e}"
 end
 ```
@@ -138,18 +138,18 @@ Set your response status to an event  ---  Alternate route: `/v3/characters/{cha
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::CalendarApi.new
+api_instance = EVEOpenAPI::CalendarApi.new
 
 character_id = 56 # Integer | The character ID requesting the event
 
 event_id = 56 # Integer | The ID of the event requested
 
-response = EveOpenApi::PutCharactersCharacterIdCalendarEventIdResponse.new # PutCharactersCharacterIdCalendarEventIdResponse | The response value to set, overriding current value.
+response = EVEOpenAPI::PutCharactersCharacterIdCalendarEventIdResponse.new # PutCharactersCharacterIdCalendarEventIdResponse | The response value to set, overriding current value.
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -158,7 +158,7 @@ opts = {
 begin
   #Respond to an event
   api_instance.put_characters_character_id_calendar_event_id(character_id, event_id, response, opts)
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling CalendarApi->put_characters_character_id_calendar_event_id: #{e}"
 end
 ```

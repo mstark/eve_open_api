@@ -1,4 +1,4 @@
-# EveOpenApi::PutCharactersCharacterIdMailMailIdInternalServerError
+# EVEOpenAPI::PutCharactersCharacterIdMailMailIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

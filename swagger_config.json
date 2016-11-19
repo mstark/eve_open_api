@@ -2,12 +2,12 @@
  "sortParamsByRequiredFlag":true,
  "ensureUniqueParams":true,
  "gemName": "eve_open_api",
- "moduleName": "EveOpenApi",
+ "moduleName": "EVEOpenAPI",
  "gemVersion": "0.2.6.dev1",
  "gemLicense": "Apache-2.0",
  "gemHomepage": "https://github.com/mstark/eve_open_api",
- "gemSummary": "An OpenApi for Eve Online.",
- "gemDescription": "An OpenApi for Eve Online. https://esi.tech.ccp.is",
+ "gemSummary": "An OpenAPI for EVE Online.",
+ "gemDescription": "An OpenAPI for EVE Online. https://esi.tech.ccp.is",
  "gemAuthor": "Michael Stark",
  "gemAuthorEmail": "mstark@gmx.org"
 }

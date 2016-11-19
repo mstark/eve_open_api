@@ -1,4 +1,4 @@
-# EveOpenApi::PostCharactersCharacterIdMailForbidden
+# EVEOpenAPI::PostCharactersCharacterIdMailForbidden
 
 ## Properties
 Name | Type | Description | Notes

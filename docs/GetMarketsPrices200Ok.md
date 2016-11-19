@@ -1,4 +1,4 @@
-# EveOpenApi::GetMarketsPrices200Ok
+# EVEOpenAPI::GetMarketsPrices200Ok
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# EveOpenApi::GetMarketsRegionIdHistory200Ok
+# EVEOpenAPI::GetMarketsRegionIdHistory200Ok
 
 ## Properties
 Name | Type | Description | Notes

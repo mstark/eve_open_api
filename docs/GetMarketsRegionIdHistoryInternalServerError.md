@@ -1,4 +1,4 @@
-# EveOpenApi::GetMarketsRegionIdHistoryInternalServerError
+# EVEOpenAPI::GetMarketsRegionIdHistoryInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

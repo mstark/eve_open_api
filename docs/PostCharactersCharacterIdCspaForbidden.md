@@ -1,4 +1,4 @@
-# EveOpenApi::PostCharactersCharacterIdCspaForbidden
+# EVEOpenAPI::PostCharactersCharacterIdCspaForbidden
 
 ## Properties
 Name | Type | Description | Notes

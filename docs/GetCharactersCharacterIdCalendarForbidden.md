@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdCalendarForbidden
+# EVEOpenAPI::GetCharactersCharacterIdCalendarForbidden
 
 ## Properties
 Name | Type | Description | Notes

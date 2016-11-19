@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseStationsStationIdInternalServerError
+# EVEOpenAPI::GetUniverseStationsStationIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

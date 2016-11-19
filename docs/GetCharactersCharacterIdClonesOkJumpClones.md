@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdClonesOkJumpClones
+# EVEOpenAPI::GetCharactersCharacterIdClonesOkJumpClones
 
 ## Properties
 Name | Type | Description | Notes

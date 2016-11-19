@@ -23,7 +23,7 @@ limitations under the License.
 
 require "uri"
 
-module EveOpenApi
+module EVEOpenAPI
   class CalendarApi
     attr_accessor :api_client
 

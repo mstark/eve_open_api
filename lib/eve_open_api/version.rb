@@ -21,6 +21,6 @@ limitations under the License.
 
 =end
 
-module EveOpenApi
+module EVEOpenAPI
   VERSION = "0.2.6.dev1"
 end

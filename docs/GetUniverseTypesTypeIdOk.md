@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseTypesTypeIdOk
+# EVEOpenAPI::GetUniverseTypesTypeIdOk
 
 ## Properties
 Name | Type | Description | Notes

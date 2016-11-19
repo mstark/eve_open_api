@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseStructuresInternalServerError
+# EVEOpenAPI::GetUniverseStructuresInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

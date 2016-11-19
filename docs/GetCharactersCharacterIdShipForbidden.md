@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdShipForbidden
+# EVEOpenAPI::GetCharactersCharacterIdShipForbidden
 
 ## Properties
 Name | Type | Description | Notes

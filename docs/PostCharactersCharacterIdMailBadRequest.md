@@ -1,4 +1,4 @@
-# EveOpenApi::PostCharactersCharacterIdMailBadRequest
+# EVEOpenAPI::PostCharactersCharacterIdMailBadRequest
 
 ## Properties
 Name | Type | Description | Notes

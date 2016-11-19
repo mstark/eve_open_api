@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdClonesOkHomeLocation
+# EVEOpenAPI::GetCharactersCharacterIdClonesOkHomeLocation
 
 ## Properties
 Name | Type | Description | Notes

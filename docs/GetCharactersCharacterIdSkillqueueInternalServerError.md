@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdSkillqueueInternalServerError
+# EVEOpenAPI::GetCharactersCharacterIdSkillqueueInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseSystemsSystemIdInternalServerError
+# EVEOpenAPI::GetUniverseSystemsSystemIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

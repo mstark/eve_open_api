@@ -1,4 +1,4 @@
-# EveOpenApi::GetMarketsRegionIdOrdersInternalServerError
+# EVEOpenAPI::GetMarketsRegionIdOrdersInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

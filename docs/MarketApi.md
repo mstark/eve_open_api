@@ -1,4 +1,4 @@
-# EveOpenApi::MarketApi
+# EVEOpenAPI::MarketApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -21,7 +21,7 @@ Return a list of prices  ---  Alternate route: `/v1/markets/prices/`  Alternate 
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::MarketApi.new
+api_instance = EVEOpenAPI::MarketApi.new
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -31,7 +31,7 @@ begin
   #List market prices
   result = api_instance.get_markets_prices(opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling MarketApi->get_markets_prices: #{e}"
 end
 ```
@@ -69,7 +69,7 @@ Return a list of historical market statistics for the specified type in a region
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::MarketApi.new
+api_instance = EVEOpenAPI::MarketApi.new
 
 region_id = 789 # Integer | Return statistics in this region
 
@@ -83,7 +83,7 @@ begin
   #List historical market statistics in a region
   result = api_instance.get_markets_region_id_history(region_id, type_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling MarketApi->get_markets_region_id_history: #{e}"
 end
 ```
@@ -123,7 +123,7 @@ Return a list of orders in a region  ---  Alternate route: `/v1/markets/{region_
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::MarketApi.new
+api_instance = EVEOpenAPI::MarketApi.new
 
 region_id = 789 # Integer | Return orders in this region
 
@@ -139,7 +139,7 @@ begin
   #List orders in a region
   result = api_instance.get_markets_region_id_orders(region_id, order_type, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling MarketApi->get_markets_region_id_orders: #{e}"
 end
 ```

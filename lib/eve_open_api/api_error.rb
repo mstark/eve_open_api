@@ -21,7 +21,7 @@ limitations under the License.
 
 =end
 
-module EveOpenApi
+module EVEOpenAPI
   class ApiError < StandardError
     attr_reader :code, :response_headers, :response_body
 

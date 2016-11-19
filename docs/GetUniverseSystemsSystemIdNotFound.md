@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseSystemsSystemIdNotFound
+# EVEOpenAPI::GetUniverseSystemsSystemIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

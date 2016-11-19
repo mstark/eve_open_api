@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdMailMailIdNotFound
+# EVEOpenAPI::GetCharactersCharacterIdMailMailIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

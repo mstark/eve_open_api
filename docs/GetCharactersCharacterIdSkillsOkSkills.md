@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdSkillsOkSkills
+# EVEOpenAPI::GetCharactersCharacterIdSkillsOkSkills
 
 ## Properties
 Name | Type | Description | Notes

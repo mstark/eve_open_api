@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdPortraitNotFound
+# EVEOpenAPI::GetCharactersCharacterIdPortraitNotFound
 
 ## Properties
 Name | Type | Description | Notes

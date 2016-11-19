@@ -1,4 +1,4 @@
-# EveOpenApi::PostCharactersCharacterIdMailLabelsLabel
+# EVEOpenAPI::PostCharactersCharacterIdMailLabelsLabel
 
 ## Properties
 Name | Type | Description | Notes

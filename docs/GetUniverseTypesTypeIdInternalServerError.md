@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseTypesTypeIdInternalServerError
+# EVEOpenAPI::GetUniverseTypesTypeIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

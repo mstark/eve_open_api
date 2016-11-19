@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdUnprocessableEntity
+# EVEOpenAPI::GetCharactersCharacterIdUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

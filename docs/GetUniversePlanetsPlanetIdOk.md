@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniversePlanetsPlanetIdOk
+# EVEOpenAPI::GetUniversePlanetsPlanetIdOk
 
 ## Properties
 Name | Type | Description | Notes

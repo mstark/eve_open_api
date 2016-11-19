@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdSkillsForbidden
+# EVEOpenAPI::GetCharactersCharacterIdSkillsForbidden
 
 ## Properties
 Name | Type | Description | Notes

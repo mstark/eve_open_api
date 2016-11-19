@@ -1,4 +1,4 @@
-# EveOpenApi::PostCharactersCharacterIdMailLabelsInternalServerError
+# EVEOpenAPI::PostCharactersCharacterIdMailLabelsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

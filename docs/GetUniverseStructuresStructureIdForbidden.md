@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseStructuresStructureIdForbidden
+# EVEOpenAPI::GetUniverseStructuresStructureIdForbidden
 
 ## Properties
 Name | Type | Description | Notes

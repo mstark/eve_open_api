@@ -1,4 +1,4 @@
-# EveOpenApi::SkillsApi
+# EVEOpenAPI::SkillsApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -20,12 +20,12 @@ List the configured skill queue for the given character  ---  Alternate route: `
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::SkillsApi.new
+api_instance = EVEOpenAPI::SkillsApi.new
 
 character_id = 56 # Integer | Character id of the target character
 
@@ -37,7 +37,7 @@ begin
   #Get character's skill queue
   result = api_instance.get_characters_character_id_skillqueue(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling SkillsApi->get_characters_character_id_skillqueue: #{e}"
 end
 ```
@@ -76,12 +76,12 @@ List all trained skills for the given character  ---  Alternate route: `/v3/char
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::SkillsApi.new
+api_instance = EVEOpenAPI::SkillsApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -93,7 +93,7 @@ begin
   #Get character skills
   result = api_instance.get_characters_character_id_skills(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling SkillsApi->get_characters_character_id_skills: #{e}"
 end
 ```

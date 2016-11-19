@@ -1,4 +1,4 @@
-# EveOpenApi::PutCharactersCharacterIdCalendarEventIdForbidden
+# EVEOpenAPI::PutCharactersCharacterIdCalendarEventIdForbidden
 
 ## Properties
 Name | Type | Description | Notes

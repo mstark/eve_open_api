@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdMailLabelsForbidden
+# EVEOpenAPI::GetCharactersCharacterIdMailLabelsForbidden
 
 ## Properties
 Name | Type | Description | Notes

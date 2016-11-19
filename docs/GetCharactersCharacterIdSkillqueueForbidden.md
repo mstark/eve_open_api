@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdSkillqueueForbidden
+# EVEOpenAPI::GetCharactersCharacterIdSkillqueueForbidden
 
 ## Properties
 Name | Type | Description | Notes

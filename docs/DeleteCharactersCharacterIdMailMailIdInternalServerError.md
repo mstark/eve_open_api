@@ -1,4 +1,4 @@
-# EveOpenApi::DeleteCharactersCharacterIdMailMailIdInternalServerError
+# EVEOpenAPI::DeleteCharactersCharacterIdMailMailIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

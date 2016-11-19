@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdCorporationhistoryInternalServerError
+# EVEOpenAPI::GetCharactersCharacterIdCorporationhistoryInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

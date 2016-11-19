@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseStructuresStructureIdNotFound
+# EVEOpenAPI::GetUniverseStructuresStructureIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

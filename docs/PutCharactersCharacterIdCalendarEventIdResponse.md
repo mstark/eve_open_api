@@ -1,4 +1,4 @@
-# EveOpenApi::PutCharactersCharacterIdCalendarEventIdResponse
+# EVEOpenAPI::PutCharactersCharacterIdCalendarEventIdResponse
 
 ## Properties
 Name | Type | Description | Notes

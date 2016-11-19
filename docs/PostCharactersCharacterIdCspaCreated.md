@@ -1,4 +1,4 @@
-# EveOpenApi::PostCharactersCharacterIdCspaCreated
+# EVEOpenAPI::PostCharactersCharacterIdCspaCreated
 
 ## Properties
 Name | Type | Description | Notes

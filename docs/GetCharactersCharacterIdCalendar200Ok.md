@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdCalendar200Ok
+# EVEOpenAPI::GetCharactersCharacterIdCalendar200Ok
 
 ## Properties
 Name | Type | Description | Notes

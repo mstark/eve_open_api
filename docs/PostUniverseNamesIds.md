@@ -1,4 +1,4 @@
-# EveOpenApi::PostUniverseNamesIds
+# EVEOpenAPI::PostUniverseNamesIds
 
 ## Properties
 Name | Type | Description | Notes

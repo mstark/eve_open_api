@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersNames200Ok
+# EVEOpenAPI::GetCharactersNames200Ok
 
 ## Properties
 Name | Type | Description | Notes

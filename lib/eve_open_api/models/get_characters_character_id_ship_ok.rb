@@ -23,7 +23,7 @@ limitations under the License.
 
 require 'date'
 
-module EveOpenApi
+module EVEOpenAPI
   # 200 ok object
   class GetCharactersCharacterIdShipOk
     # Item id's are unique to a ship and persist until it is repackaged. This value can be used to track repeated uses of a ship, or detect when a pilot changes into a different instance of the same ship type.
@@ -171,7 +171,7 @@ module EveOpenApi
           end
         end
       else # model
-        temp_model = EveOpenApi.const_get(type).new
+        temp_model = EVEOpenAPI.const_get(type).new
         temp_model.build_from_hash(value)
       end
     end

@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdSkillsInternalServerError
+# EVEOpenAPI::GetCharactersCharacterIdSkillsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

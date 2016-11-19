@@ -1,4 +1,4 @@
-# EveOpenApi::GetCorporationsCorporationIdWalletsInternalServerError
+# EVEOpenAPI::GetCorporationsCorporationIdWalletsInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

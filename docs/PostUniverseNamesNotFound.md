@@ -1,4 +1,4 @@
-# EveOpenApi::PostUniverseNamesNotFound
+# EVEOpenAPI::PostUniverseNamesNotFound
 
 ## Properties
 Name | Type | Description | Notes

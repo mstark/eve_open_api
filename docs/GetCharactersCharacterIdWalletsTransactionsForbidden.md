@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdWalletsTransactionsForbidden
+# EVEOpenAPI::GetCharactersCharacterIdWalletsTransactionsForbidden
 
 ## Properties
 Name | Type | Description | Notes

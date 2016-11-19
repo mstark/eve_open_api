@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseStructuresStructureIdOk
+# EVEOpenAPI::GetUniverseStructuresStructureIdOk
 
 ## Properties
 Name | Type | Description | Notes

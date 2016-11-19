@@ -1,4 +1,4 @@
-# EveOpenApi::PostUniverseNamesInternalServerError
+# EVEOpenAPI::PostUniverseNamesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

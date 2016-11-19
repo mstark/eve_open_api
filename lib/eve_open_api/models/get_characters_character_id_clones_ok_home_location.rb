@@ -23,7 +23,7 @@ limitations under the License.
 
 require 'date'
 
-module EveOpenApi
+module EVEOpenAPI
   # home_location object
   class GetCharactersCharacterIdClonesOkHomeLocation
     # location_id integer
@@ -191,7 +191,7 @@ module EveOpenApi
           end
         end
       else # model
-        temp_model = EveOpenApi.const_get(type).new
+        temp_model = EVEOpenAPI.const_get(type).new
         temp_model.build_from_hash(value)
       end
     end

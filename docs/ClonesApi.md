@@ -1,4 +1,4 @@
-# EveOpenApi::ClonesApi
+# EVEOpenAPI::ClonesApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -19,12 +19,12 @@ A list of the character's clones  ---  Alternate route: `/v2/characters/{charact
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::ClonesApi.new
+api_instance = EVEOpenAPI::ClonesApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -36,7 +36,7 @@ begin
   #Get clones
   result = api_instance.get_characters_character_id_clones(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling ClonesApi->get_characters_character_id_clones: #{e}"
 end
 ```

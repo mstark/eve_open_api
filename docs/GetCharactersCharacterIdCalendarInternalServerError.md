@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdCalendarInternalServerError
+# EVEOpenAPI::GetCharactersCharacterIdCalendarInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

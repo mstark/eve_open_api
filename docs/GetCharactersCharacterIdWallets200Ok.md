@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdWallets200Ok
+# EVEOpenAPI::GetCharactersCharacterIdWallets200Ok
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdWalletsJournal200Ok
+# EVEOpenAPI::GetCharactersCharacterIdWalletsJournal200Ok
 
 ## Properties
 Name | Type | Description | Notes

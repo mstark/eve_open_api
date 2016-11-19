@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseSystemsSystemIdOk
+# EVEOpenAPI::GetUniverseSystemsSystemIdOk
 
 ## Properties
 Name | Type | Description | Notes

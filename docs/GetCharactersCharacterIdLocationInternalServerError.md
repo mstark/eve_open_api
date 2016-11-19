@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdLocationInternalServerError
+# EVEOpenAPI::GetCharactersCharacterIdLocationInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# EveOpenApi::GetMarketsRegionIdHistoryUnprocessableEntity
+# EVEOpenAPI::GetMarketsRegionIdHistoryUnprocessableEntity
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdMailLabelsOkLabels
+# EVEOpenAPI::GetCharactersCharacterIdMailLabelsOkLabels
 
 ## Properties
 Name | Type | Description | Notes

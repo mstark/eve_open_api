@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdSkillqueue200Ok
+# EVEOpenAPI::GetCharactersCharacterIdSkillqueue200Ok
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdClonesInternalServerError
+# EVEOpenAPI::GetCharactersCharacterIdClonesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

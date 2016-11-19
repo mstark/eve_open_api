@@ -28,7 +28,7 @@ require 'tempfile'
 require 'typhoeus'
 require 'uri'
 
-module EveOpenApi
+module EVEOpenAPI
   class ApiClient
     # The Configuration object holding settings to be used in the API client.
     attr_accessor :config
@@ -208,7 +208,7 @@ module EveOpenApi
         end
       else
         # models, e.g. Pet
-        EveOpenApi.const_get(return_type).new.tap do |model|
+        EVEOpenAPI.const_get(return_type).new.tap do |model|
           model.build_from_hash data
         end
       end

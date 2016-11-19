@@ -28,13 +28,13 @@ require "eve_open_api/version"
 
 Gem::Specification.new do |s|
   s.name        = "eve_open_api"
-  s.version     = EveOpenApi::VERSION
+  s.version     = EVEOpenAPI::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Michael Stark"]
   s.email       = ["mstark@gmx.org"]
   s.homepage    = "https://github.com/mstark/eve_open_api"
-  s.summary     = "An OpenApi for Eve Online."
-  s.description = "An OpenApi for Eve Online. https://esi.tech.ccp.is"
+  s.summary     = "An OpenAPI for EVE Online."
+  s.description = "An OpenAPI for EVE Online. https://esi.tech.ccp.is"
   s.license     = "Apache-2.0"
 
   s.add_runtime_dependency 'typhoeus', '~> 1.0', '>= 1.0.1'

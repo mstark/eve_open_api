@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdLocationForbidden
+# EVEOpenAPI::GetCharactersCharacterIdLocationForbidden
 
 ## Properties
 Name | Type | Description | Notes

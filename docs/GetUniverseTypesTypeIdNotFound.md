@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseTypesTypeIdNotFound
+# EVEOpenAPI::GetUniverseTypesTypeIdNotFound
 
 ## Properties
 Name | Type | Description | Notes

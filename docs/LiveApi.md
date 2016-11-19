@@ -1,4 +1,4 @@
-# EveOpenApi::LiveApi
+# EVEOpenAPI::LiveApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -49,12 +49,12 @@ Delete a mail  ---  Alternate route: `/v1/characters/{character_id}/mail/{mail_i
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -67,7 +67,7 @@ opts = {
 begin
   #Delete a mail
   api_instance.delete_characters_character_id_mail_mail_id(character_id, mail_id, opts)
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->delete_characters_character_id_mail_mail_id: #{e}"
 end
 ```
@@ -107,7 +107,7 @@ Public information about a character  ---  Alternate route: `/v3/characters/{cha
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -119,7 +119,7 @@ begin
   #Get character's public information
   result = api_instance.get_characters_character_id(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id: #{e}"
 end
 ```
@@ -158,12 +158,12 @@ Get 50 event summaries from the calendar. If no event ID is given, the resource 
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 789 # Integer | The character to retrieve events from
 
@@ -176,7 +176,7 @@ begin
   #List calendar event summaries
   result = api_instance.get_characters_character_id_calendar(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_calendar: #{e}"
 end
 ```
@@ -216,12 +216,12 @@ Get all the information for a specific event  ---  Alternate route: `/v3/charact
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 789 # Integer | The character id requesting the event
 
@@ -235,7 +235,7 @@ begin
   #Get an event
   result = api_instance.get_characters_character_id_calendar_event_id(character_id, event_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_calendar_event_id: #{e}"
 end
 ```
@@ -275,12 +275,12 @@ A list of the character's clones  ---  Alternate route: `/v2/characters/{charact
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -292,7 +292,7 @@ begin
   #Get clones
   result = api_instance.get_characters_character_id_clones(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_clones: #{e}"
 end
 ```
@@ -331,7 +331,7 @@ Get a list of all the corporations a character has been a member of  ---  Altern
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -343,7 +343,7 @@ begin
   #Get corporation history
   result = api_instance.get_characters_character_id_corporationhistory(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_corporationhistory: #{e}"
 end
 ```
@@ -382,12 +382,12 @@ Information about the characters current location. Returns the current solar sys
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -399,7 +399,7 @@ begin
   #Get character location
   result = api_instance.get_characters_character_id_location(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_location: #{e}"
 end
 ```
@@ -438,12 +438,12 @@ Return the 50 most recent mail headers belonging to the character that match the
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -457,7 +457,7 @@ begin
   #Return mail headers
   result = api_instance.get_characters_character_id_mail(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_mail: #{e}"
 end
 ```
@@ -498,12 +498,12 @@ Return a list of the users mail labels, unread counts for each label and a total
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -515,7 +515,7 @@ begin
   #Get mail labels and unread counts
   result = api_instance.get_characters_character_id_mail_labels(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_mail_labels: #{e}"
 end
 ```
@@ -554,12 +554,12 @@ Return all mailing lists that the character is subscribed to   ---  Alternate ro
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -571,7 +571,7 @@ begin
   #Return mailing list subscriptions
   result = api_instance.get_characters_character_id_mail_lists(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_mail_lists: #{e}"
 end
 ```
@@ -610,12 +610,12 @@ Return the contents of an EVE mail  ---  Alternate route: `/v1/characters/{chara
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -629,7 +629,7 @@ begin
   #Return a mail
   result = api_instance.get_characters_character_id_mail_mail_id(character_id, mail_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_mail_mail_id: #{e}"
 end
 ```
@@ -669,7 +669,7 @@ Get portrait urls for a character  ---  Alternate route: `/v2/characters/{charac
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -681,7 +681,7 @@ begin
   #Get character portraits
   result = api_instance.get_characters_character_id_portrait(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_portrait: #{e}"
 end
 ```
@@ -720,12 +720,12 @@ Get the current ship type, name and id  ---  Alternate route: `/v1/characters/{c
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -737,7 +737,7 @@ begin
   #Get current ship
   result = api_instance.get_characters_character_id_ship(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_ship: #{e}"
 end
 ```
@@ -776,12 +776,12 @@ List the configured skill queue for the given character  ---  Alternate route: `
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | Character id of the target character
 
@@ -793,7 +793,7 @@ begin
   #Get character's skill queue
   result = api_instance.get_characters_character_id_skillqueue(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_skillqueue: #{e}"
 end
 ```
@@ -832,12 +832,12 @@ List all trained skills for the given character  ---  Alternate route: `/v3/char
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -849,7 +849,7 @@ begin
   #Get character skills
   result = api_instance.get_characters_character_id_skills(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_skills: #{e}"
 end
 ```
@@ -888,12 +888,12 @@ List your wallets and their balances. Characters typically have only one wallet,
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -905,7 +905,7 @@ begin
   #List wallets and balances
   result = api_instance.get_characters_character_id_wallets(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_character_id_wallets: #{e}"
 end
 ```
@@ -944,7 +944,7 @@ Resolve a set of character IDs to character names  ---  Alternate route: `/v1/ch
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_ids = [56] # Array<Integer> | A comma separated list of character IDs
 
@@ -956,7 +956,7 @@ begin
   #Get character names
   result = api_instance.get_characters_names(character_ids, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_characters_names: #{e}"
 end
 ```
@@ -995,7 +995,7 @@ Return a list of prices  ---  Alternate route: `/v1/markets/prices/`  Alternate 
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -1005,7 +1005,7 @@ begin
   #List market prices
   result = api_instance.get_markets_prices(opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_markets_prices: #{e}"
 end
 ```
@@ -1043,7 +1043,7 @@ Return a list of historical market statistics for the specified type in a region
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 region_id = 789 # Integer | Return statistics in this region
 
@@ -1057,7 +1057,7 @@ begin
   #List historical market statistics in a region
   result = api_instance.get_markets_region_id_history(region_id, type_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_markets_region_id_history: #{e}"
 end
 ```
@@ -1097,7 +1097,7 @@ Return a list of orders in a region  ---  Alternate route: `/v1/markets/{region_
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 region_id = 789 # Integer | Return orders in this region
 
@@ -1113,7 +1113,7 @@ begin
   #List orders in a region
   result = api_instance.get_markets_region_id_orders(region_id, order_type, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_markets_region_id_orders: #{e}"
 end
 ```
@@ -1155,7 +1155,7 @@ Public information on stations  ---  Alternate route: `/v1/universe/stations/{st
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 station_id = 56 # Integer | An Eve station ID
 
@@ -1167,7 +1167,7 @@ begin
   #Get station information
   result = api_instance.get_universe_stations_station_id(station_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_universe_stations_station_id: #{e}"
 end
 ```
@@ -1206,7 +1206,7 @@ List all public structures  ---  Alternate route: `/v1/universe/structures/`  Al
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -1216,7 +1216,7 @@ begin
   #List all public structures
   result = api_instance.get_universe_structures(opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_universe_structures: #{e}"
 end
 ```
@@ -1254,12 +1254,12 @@ Returns information on requested structure, if you are on the ACL. Otherwise, re
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 structure_id = 789 # Integer | An Eve structure ID
 
@@ -1271,7 +1271,7 @@ begin
   #Get structure information
   result = api_instance.get_universe_structures_structure_id(structure_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_universe_structures_structure_id: #{e}"
 end
 ```
@@ -1310,7 +1310,7 @@ Information on solar systems  ---  Alternate route: `/v1/universe/systems/{syste
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 system_id = 56 # Integer | An Eve solar system ID
 
@@ -1322,7 +1322,7 @@ begin
   #Get solar system information
   result = api_instance.get_universe_systems_system_id(system_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_universe_systems_system_id: #{e}"
 end
 ```
@@ -1361,7 +1361,7 @@ Get information on a type  ---  Alternate route: `/v1/universe/types/{type_id}/`
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 type_id = 56 # Integer | An Eve item type ID
 
@@ -1373,7 +1373,7 @@ begin
   #Get type information
   result = api_instance.get_universe_types_type_id(type_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->get_universe_types_type_id: #{e}"
 end
 ```
@@ -1412,16 +1412,16 @@ Takes a source character ID in the url and a set of target character ID's in the
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
-characters = EveOpenApi::PostCharactersCharacterIdCspaCharacters.new # PostCharactersCharacterIdCspaCharacters | The target characters to calculate the charge for
+characters = EVEOpenAPI::PostCharactersCharacterIdCspaCharacters.new # PostCharactersCharacterIdCspaCharacters | The target characters to calculate the charge for
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -1431,7 +1431,7 @@ begin
   #Calculate a CSPA charge cost
   result = api_instance.post_characters_character_id_cspa(character_id, characters, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->post_characters_character_id_cspa: #{e}"
 end
 ```
@@ -1471,16 +1471,16 @@ Create and send a new mail  ---  Alternate route: `/v1/characters/{character_id}
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | The sender's character ID
 
-mail = EveOpenApi::PostCharactersCharacterIdMailMail.new # PostCharactersCharacterIdMailMail | The mail to send
+mail = EVEOpenAPI::PostCharactersCharacterIdMailMail.new # PostCharactersCharacterIdMailMail | The mail to send
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -1490,7 +1490,7 @@ begin
   #Send a new mail
   result = api_instance.post_characters_character_id_mail(character_id, mail, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->post_characters_character_id_mail: #{e}"
 end
 ```
@@ -1530,17 +1530,17 @@ Create a mail label  ---  Alternate route: `/v2/characters/{character_id}/mail/l
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
-  label: EveOpenApi::PostCharactersCharacterIdMailLabelsLabel.new, # PostCharactersCharacterIdMailLabelsLabel | Label to create
+  label: EVEOpenAPI::PostCharactersCharacterIdMailLabelsLabel.new, # PostCharactersCharacterIdMailLabelsLabel | Label to create
   datasource: "tranquility" # String | The server name you would like data from
 }
 
@@ -1548,7 +1548,7 @@ begin
   #Create a mail label
   result = api_instance.post_characters_character_id_mail_labels(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->post_characters_character_id_mail_labels: #{e}"
 end
 ```
@@ -1588,9 +1588,9 @@ Resolve a set of IDs to names and categories. Supported ID's for resolving are: 
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
-ids = EveOpenApi::PostUniverseNamesIds.new # PostUniverseNamesIds | The ids to resolve
+ids = EVEOpenAPI::PostUniverseNamesIds.new # PostUniverseNamesIds | The ids to resolve
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -1600,7 +1600,7 @@ begin
   #Get names and categories for a set of ID's
   result = api_instance.post_universe_names(ids, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->post_universe_names: #{e}"
 end
 ```
@@ -1639,18 +1639,18 @@ Set your response status to an event  ---  Alternate route: `/v3/characters/{cha
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | The character ID requesting the event
 
 event_id = 56 # Integer | The ID of the event requested
 
-response = EveOpenApi::PutCharactersCharacterIdCalendarEventIdResponse.new # PutCharactersCharacterIdCalendarEventIdResponse | The response value to set, overriding current value.
+response = EVEOpenAPI::PutCharactersCharacterIdCalendarEventIdResponse.new # PutCharactersCharacterIdCalendarEventIdResponse | The response value to set, overriding current value.
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -1659,7 +1659,7 @@ opts = {
 begin
   #Respond to an event
   api_instance.put_characters_character_id_calendar_event_id(character_id, event_id, response, opts)
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->put_characters_character_id_calendar_event_id: #{e}"
 end
 ```
@@ -1700,18 +1700,18 @@ Update metadata about a mail  ---  Alternate route: `/v1/characters/{character_i
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::LiveApi.new
+api_instance = EVEOpenAPI::LiveApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
 mail_id = 56 # Integer | An EVE mail ID
 
-contents = EveOpenApi::PutCharactersCharacterIdMailMailIdContents.new # PutCharactersCharacterIdMailMailIdContents | Data used to update the mail
+contents = EVEOpenAPI::PutCharactersCharacterIdMailMailIdContents.new # PutCharactersCharacterIdMailMailIdContents | Data used to update the mail
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -1720,7 +1720,7 @@ opts = {
 begin
   #Update metadata about a mail
   api_instance.put_characters_character_id_mail_mail_id(character_id, mail_id, contents, opts)
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling LiveApi->put_characters_character_id_mail_mail_id: #{e}"
 end
 ```

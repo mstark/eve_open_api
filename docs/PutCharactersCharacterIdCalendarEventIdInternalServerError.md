@@ -1,4 +1,4 @@
-# EveOpenApi::PutCharactersCharacterIdCalendarEventIdInternalServerError
+# EVEOpenAPI::PutCharactersCharacterIdCalendarEventIdInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

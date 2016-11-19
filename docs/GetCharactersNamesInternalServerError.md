@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersNamesInternalServerError
+# EVEOpenAPI::GetCharactersNamesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

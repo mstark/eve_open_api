@@ -1,4 +1,4 @@
-# EveOpenApi::UniverseApi
+# EVEOpenAPI::UniverseApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -25,7 +25,7 @@ Information on a planet  ---  Alternate route: `/v1/universe/planets/{planet_id}
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::UniverseApi.new
+api_instance = EVEOpenAPI::UniverseApi.new
 
 planet_id = 56 # Integer | An Eve planet ID
 
@@ -37,7 +37,7 @@ begin
   #Get planet information
   result = api_instance.get_universe_planets_planet_id(planet_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling UniverseApi->get_universe_planets_planet_id: #{e}"
 end
 ```
@@ -76,7 +76,7 @@ Public information on stations  ---  Alternate route: `/v1/universe/stations/{st
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::UniverseApi.new
+api_instance = EVEOpenAPI::UniverseApi.new
 
 station_id = 56 # Integer | An Eve station ID
 
@@ -88,7 +88,7 @@ begin
   #Get station information
   result = api_instance.get_universe_stations_station_id(station_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling UniverseApi->get_universe_stations_station_id: #{e}"
 end
 ```
@@ -127,7 +127,7 @@ List all public structures  ---  Alternate route: `/v1/universe/structures/`  Al
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::UniverseApi.new
+api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -137,7 +137,7 @@ begin
   #List all public structures
   result = api_instance.get_universe_structures(opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling UniverseApi->get_universe_structures: #{e}"
 end
 ```
@@ -175,12 +175,12 @@ Returns information on requested structure, if you are on the ACL. Otherwise, re
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::UniverseApi.new
+api_instance = EVEOpenAPI::UniverseApi.new
 
 structure_id = 789 # Integer | An Eve structure ID
 
@@ -192,7 +192,7 @@ begin
   #Get structure information
   result = api_instance.get_universe_structures_structure_id(structure_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling UniverseApi->get_universe_structures_structure_id: #{e}"
 end
 ```
@@ -231,7 +231,7 @@ Information on solar systems  ---  Alternate route: `/v1/universe/systems/{syste
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::UniverseApi.new
+api_instance = EVEOpenAPI::UniverseApi.new
 
 system_id = 56 # Integer | An Eve solar system ID
 
@@ -243,7 +243,7 @@ begin
   #Get solar system information
   result = api_instance.get_universe_systems_system_id(system_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling UniverseApi->get_universe_systems_system_id: #{e}"
 end
 ```
@@ -282,7 +282,7 @@ Get information on a type  ---  Alternate route: `/v1/universe/types/{type_id}/`
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::UniverseApi.new
+api_instance = EVEOpenAPI::UniverseApi.new
 
 type_id = 56 # Integer | An Eve item type ID
 
@@ -294,7 +294,7 @@ begin
   #Get type information
   result = api_instance.get_universe_types_type_id(type_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling UniverseApi->get_universe_types_type_id: #{e}"
 end
 ```
@@ -333,9 +333,9 @@ Resolve a set of IDs to names and categories. Supported ID's for resolving are: 
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::UniverseApi.new
+api_instance = EVEOpenAPI::UniverseApi.new
 
-ids = EveOpenApi::PostUniverseNamesIds.new # PostUniverseNamesIds | The ids to resolve
+ids = EVEOpenAPI::PostUniverseNamesIds.new # PostUniverseNamesIds | The ids to resolve
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -345,7 +345,7 @@ begin
   #Get names and categories for a set of ID's
   result = api_instance.post_universe_names(ids, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling UniverseApi->post_universe_names: #{e}"
 end
 ```

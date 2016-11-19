@@ -1,4 +1,4 @@
-# EveOpenApi::GetCharactersCharacterIdClonesForbidden
+# EVEOpenAPI::GetCharactersCharacterIdClonesForbidden
 
 ## Properties
 Name | Type | Description | Notes

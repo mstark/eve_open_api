@@ -1,4 +1,4 @@
-# EveOpenApi::PostCharactersCharacterIdMailMail
+# EVEOpenAPI::PostCharactersCharacterIdMailMail
 
 ## Properties
 Name | Type | Description | Notes

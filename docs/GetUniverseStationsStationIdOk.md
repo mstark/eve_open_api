@@ -1,4 +1,4 @@
-# EveOpenApi::GetUniverseStationsStationIdOk
+# EVEOpenAPI::GetUniverseStationsStationIdOk
 
 ## Properties
 Name | Type | Description | Notes

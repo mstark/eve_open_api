@@ -1,4 +1,4 @@
-# EveOpenApi::GetMarketsPricesInternalServerError
+# EVEOpenAPI::GetMarketsPricesInternalServerError
 
 ## Properties
 Name | Type | Description | Notes

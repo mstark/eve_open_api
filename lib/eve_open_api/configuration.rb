@@ -23,7 +23,7 @@ limitations under the License.
 
 require 'uri'
 
-module EveOpenApi
+module EVEOpenAPI
   class Configuration
     # Defines url scheme
     attr_accessor :scheme

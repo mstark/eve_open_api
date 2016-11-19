@@ -153,10 +153,10 @@ require 'eve_open_api/api/skills_api'
 require 'eve_open_api/api/universe_api'
 require 'eve_open_api/api/wallet_api'
 
-module EveOpenApi
+module EVEOpenAPI
   class << self
     # Customize default settings for the SDK using block.
-    #   EveOpenApi.configure do |config|
+    #   EVEOpenAPI.configure do |config|
     #     config.username = "xxx"
     #     config.password = "xxx"
     #   end

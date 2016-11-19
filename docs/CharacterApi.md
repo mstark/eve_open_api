@@ -1,4 +1,4 @@
-# EveOpenApi::CharacterApi
+# EVEOpenAPI::CharacterApi
 
 All URIs are relative to *https://esi.tech.ccp.is/latest*
 
@@ -23,7 +23,7 @@ Public information about a character  ---  Alternate route: `/v3/characters/{cha
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::CharacterApi.new
+api_instance = EVEOpenAPI::CharacterApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -35,7 +35,7 @@ begin
   #Get character's public information
   result = api_instance.get_characters_character_id(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling CharacterApi->get_characters_character_id: #{e}"
 end
 ```
@@ -74,7 +74,7 @@ Get a list of all the corporations a character has been a member of  ---  Altern
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::CharacterApi.new
+api_instance = EVEOpenAPI::CharacterApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -86,7 +86,7 @@ begin
   #Get corporation history
   result = api_instance.get_characters_character_id_corporationhistory(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling CharacterApi->get_characters_character_id_corporationhistory: #{e}"
 end
 ```
@@ -125,7 +125,7 @@ Get portrait urls for a character  ---  Alternate route: `/v2/characters/{charac
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::CharacterApi.new
+api_instance = EVEOpenAPI::CharacterApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
@@ -137,7 +137,7 @@ begin
   #Get character portraits
   result = api_instance.get_characters_character_id_portrait(character_id, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling CharacterApi->get_characters_character_id_portrait: #{e}"
 end
 ```
@@ -176,7 +176,7 @@ Resolve a set of character IDs to character names  ---  Alternate route: `/v1/ch
 # load the gem
 require 'eve_open_api'
 
-api_instance = EveOpenApi::CharacterApi.new
+api_instance = EVEOpenAPI::CharacterApi.new
 
 character_ids = [56] # Array<Integer> | A comma separated list of character IDs
 
@@ -188,7 +188,7 @@ begin
   #Get character names
   result = api_instance.get_characters_names(character_ids, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling CharacterApi->get_characters_names: #{e}"
 end
 ```
@@ -227,16 +227,16 @@ Takes a source character ID in the url and a set of target character ID's in the
 # load the gem
 require 'eve_open_api'
 # setup authorization
-EveOpenApi.configure do |config|
+EVEOpenAPI.configure do |config|
   # Configure OAuth2 access token for authorization: evesso
   config.access_token = 'YOUR ACCESS TOKEN'
 end
 
-api_instance = EveOpenApi::CharacterApi.new
+api_instance = EVEOpenAPI::CharacterApi.new
 
 character_id = 56 # Integer | An EVE character ID
 
-characters = EveOpenApi::PostCharactersCharacterIdCspaCharacters.new # PostCharactersCharacterIdCspaCharacters | The target characters to calculate the charge for
+characters = EVEOpenAPI::PostCharactersCharacterIdCspaCharacters.new # PostCharactersCharacterIdCspaCharacters | The target characters to calculate the charge for
 
 opts = { 
   datasource: "tranquility" # String | The server name you would like data from
@@ -246,7 +246,7 @@ begin
   #Calculate a CSPA charge cost
   result = api_instance.post_characters_character_id_cspa(character_id, characters, opts)
   p result
-rescue EveOpenApi::ApiError => e
+rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling CharacterApi->post_characters_character_id_cspa: #{e}"
 end
 ```
