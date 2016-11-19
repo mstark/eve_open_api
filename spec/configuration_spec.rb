@@ -23,14 +23,14 @@ limitations under the License.
 
 require 'spec_helper'
 
-describe EveOpenApi::Configuration do
-  let(:config) { EveOpenApi::Configuration.default }
+describe EVEOpenAPI::Configuration do
+  let(:config) { EVEOpenAPI::Configuration.default }
 
   before(:each) do
     # uncomment below to setup host and base_path
     #require 'URI'
     #uri = URI.parse("https://esi.tech.ccp.is/latest")
-    #EveOpenApi.configure do |c|
+    #EVEOpenAPI.configure do |c|
     #  c.host = uri.host
     #  c.base_path = uri.path
     #end
