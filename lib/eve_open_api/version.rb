@@ -11,5 +11,5 @@ Swagger Codegen version: 2.3.1
 =end
 
 module EVEOpenAPI
-  VERSION = "0.2.6.dev1"
+  VERSION = "0.7.5"
 end
