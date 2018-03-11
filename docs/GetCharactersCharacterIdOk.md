@@ -3,14 +3,16 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ancestry_id** | **Integer** | ancestry_id integer | 
-**birthday** | **DateTime** | Creation date of the character | 
-**bloodline_id** | **Integer** | bloodline_id integer | 
+**name** | **String** | name string | 
+**description** | **String** | description string | [optional] 
 **corporation_id** | **Integer** | The character&#39;s corporation ID | 
-**description** | **String** | description string | 
+**alliance_id** | **Integer** | The character&#39;s alliance ID | [optional] 
+**birthday** | **DateTime** | Creation date of the character | 
 **gender** | **String** | gender string | 
-**name** | **String** | The name of the character | 
 **race_id** | **Integer** | race_id integer | 
+**bloodline_id** | **Integer** | bloodline_id integer | 
+**ancestry_id** | **Integer** | ancestry_id integer | [optional] 
 **security_status** | **Float** | security_status number | [optional] 
+**faction_id** | **Integer** | ID of the faction the character is fighting for, if the character is enlisted in Factional Warfare | [optional] 
 
 
