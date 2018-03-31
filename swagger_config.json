@@ -3,7 +3,7 @@
  "ensureUniqueParams":true,
  "gemName": "eve_open_api",
  "moduleName": "EVEOpenAPI",
- "gemVersion": "0.2.6.dev1",
+ "gemVersion": "0.7.6",
  "gemLicense": "Apache-2.0",
  "gemHomepage": "https://github.com/mstark/eve_open_api",
  "gemSummary": "An OpenAPI for EVE Online.",

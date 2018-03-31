@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 
 Get character wallet journal
 
-Retrieve character wallet journal  --- Alternate route: `/dev/characters/{character_id}/wallet/journal/`  Alternate route: `/v3/characters/{character_id}/wallet/journal/`  --- This route is cached for up to 3600 seconds
+Retrieve character wallet journal  --- Alternate route: `/v3/characters/{character_id}/wallet/journal/`  --- This route is cached for up to 3600 seconds  --- [This route has an available update](https://esi.tech.ccp.is/diff/latest/dev/#GET-/characters/{character_id}/wallet/journal/)
 
 ### Example
 ```ruby
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 
 Get corporation wallet journal
 
-Retrieve corporation wallet journal  --- Alternate route: `/dev/corporations/{corporation_id}/wallets/{division}/journal/`  Alternate route: `/v2/corporations/{corporation_id}/wallets/{division}/journal/`  --- This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Junior_Accountant 
+Retrieve corporation wallet journal  --- Alternate route: `/v2/corporations/{corporation_id}/wallets/{division}/journal/`  --- This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Junior_Accountant   --- [This route has an available update](https://esi.tech.ccp.is/diff/latest/dev/#GET-/corporations/{corporation_id}/wallets/{division}/journal/)
 
 ### Example
 ```ruby
