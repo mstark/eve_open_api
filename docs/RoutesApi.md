@@ -1,6 +1,6 @@
 # EVEOpenAPI::RoutesApi
 
-All URIs are relative to *https://esi.tech.ccp.is/latest*
+All URIs are relative to *https://esi.evetech.net/latest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -30,8 +30,7 @@ opts = {
   connections: [EVEOpenAPI::Array<Integer>.new], # Array<Array<Integer>> | connected solar system pairs
   datasource: "tranquility", # String | The server name you would like data from
   flag: "shortest", # String | route security preference
-  user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
-  x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
+  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -53,8 +52,7 @@ Name | Type | Description  | Notes
  **connections** | [**Array&lt;Array&lt;Integer&gt;&gt;**](Array&lt;Integer&gt;.md)| connected solar system pairs | [optional] 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **flag** | **String**| route security preference | [optional] [default to shortest]
- **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
- **x_user_agent** | **String**| Client identifier, takes precedence over User-Agent | [optional] 
+ **if_none_match** | **String**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
 
 ### Return type
 
@@ -66,7 +64,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 

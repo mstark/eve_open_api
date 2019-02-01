@@ -1,6 +1,6 @@
 # EVEOpenAPI::SearchApi
 
-All URIs are relative to *https://esi.tech.ccp.is/latest*
+All URIs are relative to *https://esi.evetech.net/latest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -34,12 +34,12 @@ character_id = 56 # Integer | An EVE character ID
 search = "search_example" # String | The string to search on
 
 opts = { 
+  accept_language: "en-us", # String | Language to use in the response
   datasource: "tranquility", # String | The server name you would like data from
-  language: "en-us", # String | Language to use in the response
+  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
   strict: false, # BOOLEAN | Whether the search should be a strict match
-  token: "token_example", # String | Access token to use if unable to set a header
-  user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
-  x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
+  token: "token_example" # String | Access token to use if unable to set a header
 }
 
 begin
@@ -58,12 +58,12 @@ Name | Type | Description  | Notes
  **categories** | [**Array&lt;String&gt;**](String.md)| Type of entities to search for | 
  **character_id** | **Integer**| An EVE character ID | 
  **search** | **String**| The string to search on | 
+ **accept_language** | **String**| Language to use in the response | [optional] [default to en-us]
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
- **language** | **String**| Language to use in the response | [optional] [default to en-us]
+ **if_none_match** | **String**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
+ **language** | **String**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
  **strict** | **BOOLEAN**| Whether the search should be a strict match | [optional] [default to false]
  **token** | **String**| Access token to use if unable to set a header | [optional] 
- **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
- **x_user_agent** | **String**| Client identifier, takes precedence over User-Agent | [optional] 
 
 ### Return type
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
@@ -99,11 +99,11 @@ categories = ["categories_example"] # Array<String> | Type of entities to search
 search = "search_example" # String | The string to search on
 
 opts = { 
+  accept_language: "en-us", # String | Language to use in the response
   datasource: "tranquility", # String | The server name you would like data from
-  language: "en-us", # String | Language to use in the response
-  strict: false, # BOOLEAN | Whether the search should be a strict match
-  user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
-  x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
+  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  strict: false # BOOLEAN | Whether the search should be a strict match
 }
 
 begin
@@ -121,11 +121,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **categories** | [**Array&lt;String&gt;**](String.md)| Type of entities to search for | 
  **search** | **String**| The string to search on | 
+ **accept_language** | **String**| Language to use in the response | [optional] [default to en-us]
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
- **language** | **String**| Language to use in the response | [optional] [default to en-us]
+ **if_none_match** | **String**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
+ **language** | **String**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
  **strict** | **BOOLEAN**| Whether the search should be a strict match | [optional] [default to false]
- **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
- **x_user_agent** | **String**| Client identifier, takes precedence over User-Agent | [optional] 
 
 ### Return type
 
@@ -137,7 +137,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 

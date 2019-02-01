@@ -1,6 +1,6 @@
 # EVEOpenAPI::WalletApi
 
-All URIs are relative to *https://esi.tech.ccp.is/latest*
+All URIs are relative to *https://esi.evetech.net/latest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -35,9 +35,8 @@ character_id = 56 # Integer | An EVE character ID
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example", # String | Access token to use if unable to set a header
-  user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
-  x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
+  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: "token_example" # String | Access token to use if unable to set a header
 }
 
 begin
@@ -55,9 +54,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **Integer**| An EVE character ID | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
+ **if_none_match** | **String**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
  **token** | **String**| Access token to use if unable to set a header | [optional] 
- **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
- **x_user_agent** | **String**| Client identifier, takes precedence over User-Agent | [optional] 
 
 ### Return type
 
@@ -69,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
@@ -79,7 +77,7 @@ Name | Type | Description  | Notes
 
 Get character wallet journal
 
-Retrieve character wallet journal  --- Alternate route: `/v3/characters/{character_id}/wallet/journal/`  --- This route is cached for up to 3600 seconds  --- [This route has an available update](https://esi.tech.ccp.is/diff/latest/dev/#GET-/characters/{character_id}/wallet/journal/)
+Retrieve the given character's wallet journal going 30 days back  --- Alternate route: `/dev/characters/{character_id}/wallet/journal/`  Alternate route: `/v5/characters/{character_id}/wallet/journal/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 ```ruby
@@ -97,10 +95,9 @@ character_id = 56 # Integer | An EVE character ID
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
-  from_id: 789, # Integer | Only show journal entries happened before the transaction referenced by this id
-  token: "token_example", # String | Access token to use if unable to set a header
-  user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
-  x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
+  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  page: 1 # Integer | Which page of results to return
+  token: "token_example" # String | Access token to use if unable to set a header
 }
 
 begin
@@ -118,10 +115,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **Integer**| An EVE character ID | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
- **from_id** | **Integer**| Only show journal entries happened before the transaction referenced by this id | [optional] 
+ **if_none_match** | **String**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
+ **page** | **Integer**| Which page of results to return | [optional] [default to 1]
  **token** | **String**| Access token to use if unable to set a header | [optional] 
- **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
- **x_user_agent** | **String**| Client identifier, takes precedence over User-Agent | [optional] 
 
 ### Return type
 
@@ -133,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
@@ -162,9 +158,8 @@ character_id = 56 # Integer | An EVE character ID
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
   from_id: 789, # Integer | Only show transactions happened before the one referenced by this id
-  token: "token_example", # String | Access token to use if unable to set a header
-  user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
-  x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
+  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: "token_example" # String | Access token to use if unable to set a header
 }
 
 begin
@@ -183,9 +178,8 @@ Name | Type | Description  | Notes
  **character_id** | **Integer**| An EVE character ID | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **from_id** | **Integer**| Only show transactions happened before the one referenced by this id | [optional] 
+ **if_none_match** | **String**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
  **token** | **String**| Access token to use if unable to set a header | [optional] 
- **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
- **x_user_agent** | **String**| Client identifier, takes precedence over User-Agent | [optional] 
 
 ### Return type
 
@@ -197,13 +191,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
 
 # **get_corporations_corporation_id_wallets**
-> Array&lt;GetCorporationsCorporationIdWallets200Ok&gt; get_corporations_corporation_id_wallets(corporation_id, , opts)
+> Array&lt;GetCorporationsCorporationIdWallets200Ok&gt; get_corporations_corporation_id_wallets(corporation_id, opts)
 
 Returns a corporation's wallet balance
 
@@ -225,14 +219,13 @@ corporation_id = 56 # Integer | An EVE corporation ID
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example", # String | Access token to use if unable to set a header
-  user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
-  x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
+  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: "token_example" # String | Access token to use if unable to set a header
 }
 
 begin
   #Returns a corporation's wallet balance
-  result = api_instance.get_corporations_corporation_id_wallets(corporation_id, , opts)
+  result = api_instance.get_corporations_corporation_id_wallets(corporation_id, opts)
   p result
 rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling WalletApi->get_corporations_corporation_id_wallets: #{e}"
@@ -245,9 +238,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **Integer**| An EVE corporation ID | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
+ **if_none_match** | **String**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
  **token** | **String**| Access token to use if unable to set a header | [optional] 
- **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
- **x_user_agent** | **String**| Client identifier, takes precedence over User-Agent | [optional] 
 
 ### Return type
 
@@ -259,17 +251,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
 
 # **get_corporations_corporation_id_wallets_division_journal**
-> Array&lt;GetCorporationsCorporationIdWalletsDivisionJournal200Ok&gt; get_corporations_corporation_id_wallets_division_journal(corporation_id, division, opts)
+> Array&lt;GetCorporationsCorporationIdWalletsDivisionJournal200Ok&gt; get_corporations_corporation_id_wallets_division_journal(corporation_iddivision, opts)
 
 Get corporation wallet journal
 
-Retrieve corporation wallet journal  --- Alternate route: `/v2/corporations/{corporation_id}/wallets/{division}/journal/`  --- This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Junior_Accountant   --- [This route has an available update](https://esi.tech.ccp.is/diff/latest/dev/#GET-/corporations/{corporation_id}/wallets/{division}/journal/)
+Retrieve the given corporation's wallet journal for the given division going 30 days back  --- Alternate route: `/dev/corporations/{corporation_id}/wallets/{division}/journal/`  Alternate route: `/v4/corporations/{corporation_id}/wallets/{division}/journal/`  --- This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Accountant, Junior_Accountant 
 
 ### Example
 ```ruby
@@ -289,15 +281,14 @@ division = 56 # Integer | Wallet key of the division to fetch journals from
 
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
-  from_id: 789, # Integer | Only show journal entries happened before the transaction referenced by this id
-  token: "token_example", # String | Access token to use if unable to set a header
-  user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
-  x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
+  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  page: 1 # Integer | Which page of results to return
+  token: "token_example" # String | Access token to use if unable to set a header
 }
 
 begin
   #Get corporation wallet journal
-  result = api_instance.get_corporations_corporation_id_wallets_division_journal(corporation_id, division, opts)
+  result = api_instance.get_corporations_corporation_id_wallets_division_journal(corporation_iddivision, opts)
   p result
 rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling WalletApi->get_corporations_corporation_id_wallets_division_journal: #{e}"
@@ -311,10 +302,9 @@ Name | Type | Description  | Notes
  **corporation_id** | **Integer**| An EVE corporation ID | 
  **division** | **Integer**| Wallet key of the division to fetch journals from | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
- **from_id** | **Integer**| Only show journal entries happened before the transaction referenced by this id | [optional] 
+ **if_none_match** | **String**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
+ **page** | **Integer**| Which page of results to return | [optional] [default to 1]
  **token** | **String**| Access token to use if unable to set a header | [optional] 
- **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
- **x_user_agent** | **String**| Client identifier, takes precedence over User-Agent | [optional] 
 
 ### Return type
 
@@ -326,13 +316,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
 
 # **get_corporations_corporation_id_wallets_division_transactions**
-> Array&lt;GetCorporationsCorporationIdWalletsDivisionTransactions200Ok&gt; get_corporations_corporation_id_wallets_division_transactions(corporation_id, division, opts)
+> Array&lt;GetCorporationsCorporationIdWalletsDivisionTransactions200Ok&gt; get_corporations_corporation_id_wallets_division_transactions(corporation_iddivision, opts)
 
 Get corporation wallet transactions
 
@@ -357,14 +347,13 @@ division = 56 # Integer | Wallet key of the division to fetch journals from
 opts = { 
   datasource: "tranquility", # String | The server name you would like data from
   from_id: 789, # Integer | Only show journal entries happened before the transaction referenced by this id
-  token: "token_example", # String | Access token to use if unable to set a header
-  user_agent: "user_agent_example", # String | Client identifier, takes precedence over headers
-  x_user_agent: "x_user_agent_example" # String | Client identifier, takes precedence over User-Agent
+  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: "token_example" # String | Access token to use if unable to set a header
 }
 
 begin
   #Get corporation wallet transactions
-  result = api_instance.get_corporations_corporation_id_wallets_division_transactions(corporation_id, division, opts)
+  result = api_instance.get_corporations_corporation_id_wallets_division_transactions(corporation_iddivision, opts)
   p result
 rescue EVEOpenAPI::ApiError => e
   puts "Exception when calling WalletApi->get_corporations_corporation_id_wallets_division_transactions: #{e}"
@@ -379,9 +368,8 @@ Name | Type | Description  | Notes
  **division** | **Integer**| Wallet key of the division to fetch journals from | 
  **datasource** | **String**| The server name you would like data from | [optional] [default to tranquility]
  **from_id** | **Integer**| Only show journal entries happened before the transaction referenced by this id | [optional] 
+ **if_none_match** | **String**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
  **token** | **String**| Access token to use if unable to set a header | [optional] 
- **user_agent** | **String**| Client identifier, takes precedence over headers | [optional] 
- **x_user_agent** | **String**| Client identifier, takes precedence over User-Agent | [optional] 
 
 ### Return type
 
@@ -393,7 +381,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
