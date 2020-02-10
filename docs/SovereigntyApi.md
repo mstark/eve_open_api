@@ -24,8 +24,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::SovereigntyApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -74,8 +74,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::SovereigntyApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -124,8 +124,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::SovereigntyApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin

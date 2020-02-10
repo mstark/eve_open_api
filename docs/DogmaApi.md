@@ -26,8 +26,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::DogmaApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -78,8 +78,8 @@ api_instance = EVEOpenAPI::DogmaApi.new
 attribute_id = 56 # Integer | A dogma attribute ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -133,8 +133,8 @@ item_id = 789 # Integer | item_id integer
 type_id = 56 # Integer | type_id integer
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -185,8 +185,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::DogmaApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -237,8 +237,8 @@ api_instance = EVEOpenAPI::DogmaApi.new
 effect_id = 56 # Integer | A dogma effect ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin

@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 Get character assets
 
-Return a list of the characters assets  --- Alternate route: `/dev/characters/{character_id}/assets/`  Alternate route: `/v3/characters/{character_id}/assets/`  --- This route is cached for up to 3600 seconds
+Return a list of the characters assets  --- Alternate route: `/v3/characters/{character_id}/assets/`  --- This route is cached for up to 3600 seconds  --- Warning: This route has an upgrade available  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/characters/{character_id}/assets/)
 
 ### Example
 ```ruby
@@ -34,10 +34,10 @@ api_instance = EVEOpenAPI::AssetsApi.new
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   page: 1 # Integer | Which page of results to return
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 
 Get corporation assets
 
-Return a list of the corporation assets  --- Alternate route: `/dev/corporations/{corporation_id}/assets/`  Alternate route: `/v3/corporations/{corporation_id}/assets/`  --- This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director 
+Return a list of the corporation assets  --- Alternate route: `/v3/corporations/{corporation_id}/assets/`  --- This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director   --- Warning: This route has an upgrade available  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/assets/)
 
 ### Example
 ```ruby
@@ -96,10 +96,10 @@ api_instance = EVEOpenAPI::AssetsApi.new
 corporation_id = 56 # Integer | An EVE corporation ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   page: 1 # Integer | Which page of results to return
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -160,8 +160,8 @@ character_id = 56 # Integer | An EVE character ID
 item_ids = [EVEOpenAPI::Array<Integer>.new] # Array<Integer> | A list of item ids
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -221,8 +221,8 @@ character_id = 56 # Integer | An EVE character ID
 item_ids = [EVEOpenAPI::Array<Integer>.new] # Array<Integer> | A list of item ids
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -282,8 +282,8 @@ corporation_id = 56 # Integer | An EVE corporation ID
 item_ids = [EVEOpenAPI::Array<Integer>.new] # Array<Integer> | A list of item ids
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -343,8 +343,8 @@ corporation_id = 56 # Integer | An EVE corporation ID
 item_ids = [EVEOpenAPI::Array<Integer>.new] # Array<Integer> | A list of item ids
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin

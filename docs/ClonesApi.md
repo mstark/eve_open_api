@@ -30,9 +30,9 @@ api_instance = EVEOpenAPI::ClonesApi.new
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -90,9 +90,9 @@ api_instance = EVEOpenAPI::ClonesApi.new
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin

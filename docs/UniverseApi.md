@@ -51,10 +51,10 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
 }
 
 begin
@@ -107,8 +107,8 @@ api_instance = EVEOpenAPI::UniverseApi.new
 asteroid_belt_id = 56 # Integer | asteroid_belt_id integer
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -158,10 +158,10 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
 }
 
 begin
@@ -212,8 +212,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -264,10 +264,10 @@ api_instance = EVEOpenAPI::UniverseApi.new
 category_id = 56 # Integer | An Eve item category ID
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
 }
 
 begin
@@ -319,8 +319,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -371,10 +371,10 @@ api_instance = EVEOpenAPI::UniverseApi.new
 constellation_id = 56 # Integer | constellation_id integer
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
 }
 
 begin
@@ -426,10 +426,10 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
 }
 
 begin
@@ -480,8 +480,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -532,8 +532,8 @@ api_instance = EVEOpenAPI::UniverseApi.new
 graphic_id = 56 # Integer | graphic_id integer
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -583,8 +583,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   page: 1 # Integer | Which page of results to return
 }
 
@@ -637,10 +637,10 @@ api_instance = EVEOpenAPI::UniverseApi.new
 group_id = 56 # Integer | An Eve item group ID
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
 }
 
 begin
@@ -694,8 +694,8 @@ api_instance = EVEOpenAPI::UniverseApi.new
 moon_id = 56 # Integer | moon_id integer
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -747,8 +747,8 @@ api_instance = EVEOpenAPI::UniverseApi.new
 planet_id = 56 # Integer | planet_id integer
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -798,10 +798,10 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
 }
 
 begin
@@ -852,8 +852,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -904,10 +904,10 @@ api_instance = EVEOpenAPI::UniverseApi.new
 region_id = 56 # Integer | region_id integer
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
 }
 
 begin
@@ -961,8 +961,8 @@ api_instance = EVEOpenAPI::UniverseApi.new
 stargate_id = 56 # Integer | stargate_id integer
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -1014,8 +1014,8 @@ api_instance = EVEOpenAPI::UniverseApi.new
 star_id = 56 # Integer | star_id integer
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -1067,8 +1067,8 @@ api_instance = EVEOpenAPI::UniverseApi.new
 station_id = 56 # Integer | station_id integer
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -1118,9 +1118,9 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  filter: "filter_example", # String | Only list public structures that have this service online
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  filter: 'filter_example', # String | Only list public structures that have this service online
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -1177,9 +1177,9 @@ api_instance = EVEOpenAPI::UniverseApi.new
 structure_id = 789 # Integer | An Eve structure ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -1230,8 +1230,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -1280,8 +1280,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -1330,8 +1330,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -1382,10 +1382,10 @@ api_instance = EVEOpenAPI::UniverseApi.new
 system_id = 56 # Integer | system_id integer
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
 }
 
 begin
@@ -1437,8 +1437,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::UniverseApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   page: 1 # Integer | Which page of results to return
 }
 
@@ -1491,10 +1491,10 @@ api_instance = EVEOpenAPI::UniverseApi.new
 type_id = 56 # Integer | An Eve item type ID
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
 }
 
 begin
@@ -1548,9 +1548,9 @@ api_instance = EVEOpenAPI::UniverseApi.new
 names = [EVEOpenAPI::Array<String>.new] # Array<String> | The names to resolve
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
 }
 
 begin
@@ -1591,7 +1591,7 @@ No authorization required
 
 Get names and categories for a set of IDs
 
-Resolve a set of IDs to names and categories. Supported ID's for resolving are: Characters, Corporations, Alliances, Stations, Solar Systems, Constellations, Regions, Types  --- Alternate route: `/v2/universe/names/`   --- Warning: This route has an upgrade available  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#POST-/universe/names/)
+Resolve a set of IDs to names and categories. Supported ID's for resolving are: Characters, Corporations, Alliances, Stations, Solar Systems, Constellations, Regions, Types, Factions  --- Alternate route: `/dev/universe/names/`  Alternate route: `/v3/universe/names/` 
 
 ### Example
 ```ruby
@@ -1603,7 +1603,7 @@ api_instance = EVEOpenAPI::UniverseApi.new
 ids = [EVEOpenAPI::Array<Integer>.new] # Array<Integer> | The ids to resolve
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
+  datasource: 'tranquility', # String | The server name you would like data from
 }
 
 begin

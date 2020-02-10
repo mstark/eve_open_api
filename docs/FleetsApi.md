@@ -44,8 +44,8 @@ fleet_id = 789 # Integer | ID for a fleet
 member_id = 56 # Integer | The character ID of a member in this fleet
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -104,8 +104,8 @@ fleet_id = 789 # Integer | ID for a fleet
 squad_id = 789 # Integer | The squad to delete
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -164,8 +164,8 @@ fleet_id = 789 # Integer | ID for a fleet
 wing_id = 789 # Integer | The wing to delete
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -205,7 +205,7 @@ nil (empty response body)
 
 Get character fleet info
 
-Return the fleet ID the character is in, if any.  --- Alternate route: `/dev/characters/{character_id}/fleet/`  Alternate route: `/legacy/characters/{character_id}/fleet/`  Alternate route: `/v1/characters/{character_id}/fleet/`  --- This route is cached for up to 60 seconds
+Return the fleet ID the character is in, if any.  --- Alternate route: `/legacy/characters/{character_id}/fleet/`  Alternate route: `/v1/characters/{character_id}/fleet/`  --- This route is cached for up to 60 seconds  --- Warning: This route has an upgrade available  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/characters/{character_id}/fleet/)
 
 ### Example
 ```ruby
@@ -222,9 +222,9 @@ api_instance = EVEOpenAPI::FleetsApi.new
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -282,9 +282,9 @@ api_instance = EVEOpenAPI::FleetsApi.new
 fleet_id = 789 # Integer | ID for a fleet
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -342,11 +342,11 @@ api_instance = EVEOpenAPI::FleetsApi.new
 fleet_id = 789 # Integer | ID for a fleet
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
-  token: "token_example" # String | Access token to use if unable to set a header
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -406,11 +406,11 @@ api_instance = EVEOpenAPI::FleetsApi.new
 fleet_id = 789 # Integer | ID for a fleet
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
-  token: "token_example" # String | Access token to use if unable to set a header
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -472,8 +472,8 @@ fleet_id = 789 # Integer | ID for a fleet
 invitation = EVEOpenAPI::PostFleetsFleetIdMembersInvitation.new # PostFleetsFleetIdMembersInvitation | Details of the invitation
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -530,8 +530,8 @@ api_instance = EVEOpenAPI::FleetsApi.new
 fleet_id = 789 # Integer | ID for a fleet
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -590,8 +590,8 @@ fleet_id = 789 # Integer | ID for a fleet
 wing_id = 789 # Integer | The wing_id to create squad in
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -651,8 +651,8 @@ fleet_id = 789 # Integer | ID for a fleet
 new_settings = EVEOpenAPI::PutFleetsFleetIdNewSettings.new # PutFleetsFleetIdNewSettings | What to update for this fleet
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -713,8 +713,8 @@ member_id = 56 # Integer | The character ID of a member in this fleet
 movement = EVEOpenAPI::PutFleetsFleetIdMembersMemberIdMovement.new # PutFleetsFleetIdMembersMemberIdMovement | Details of the invitation
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -776,8 +776,8 @@ naming = EVEOpenAPI::PutFleetsFleetIdSquadsSquadIdNaming.new # PutFleetsFleetIdS
 squad_id = 789 # Integer | The squad to rename
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -839,8 +839,8 @@ naming = EVEOpenAPI::PutFleetsFleetIdWingsWingIdNaming.new # PutFleetsFleetIdWin
 wing_id = 789 # Integer | The wing to rename
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin

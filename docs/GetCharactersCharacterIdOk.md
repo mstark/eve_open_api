@@ -14,5 +14,6 @@ Name | Type | Description | Notes
 **name** | **String** | name string | 
 **race_id** | **Integer** | race_id integer | 
 **security_status** | **Float** | security_status number | [optional] 
+**title** | **String** | The individual title of the character | [optional] 
 
 

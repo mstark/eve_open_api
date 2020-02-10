@@ -37,8 +37,8 @@ clear_other_waypoints = false # BOOLEAN | Whether clean other waypoints beforing
 destination_id = 789 # Integer | The destination to travel to, can be solar system, station or structure's id
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -96,8 +96,8 @@ api_instance = EVEOpenAPI::UserInterfaceApi.new
 contract_id = 56 # Integer | The contract to open
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -153,8 +153,8 @@ api_instance = EVEOpenAPI::UserInterfaceApi.new
 target_id = 56 # Integer | The target to open
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -210,8 +210,8 @@ api_instance = EVEOpenAPI::UserInterfaceApi.new
 type_id = 56 # Integer | The item type to open in market window
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -267,8 +267,8 @@ api_instance = EVEOpenAPI::UserInterfaceApi.new
 new_mail = EVEOpenAPI::PostUiOpenwindowNewmailNewMail.new # PostUiOpenwindowNewmailNewMail | The details of mail to create
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin

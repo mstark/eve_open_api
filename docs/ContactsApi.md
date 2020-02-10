@@ -39,8 +39,8 @@ character_id = 56 # Integer | An EVE character ID
 contact_ids = [56] # Array<Integer> | A list of contacts to delete
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -97,10 +97,10 @@ api_instance = EVEOpenAPI::ContactsApi.new
 alliance_id = 56 # Integer | An EVE alliance ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   page: 1 # Integer | Which page of results to return
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -159,9 +159,9 @@ api_instance = EVEOpenAPI::ContactsApi.new
 alliance_id = 56 # Integer | An EVE alliance ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -219,10 +219,10 @@ api_instance = EVEOpenAPI::ContactsApi.new
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   page: 1 # Integer | Which page of results to return
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -281,9 +281,9 @@ api_instance = EVEOpenAPI::ContactsApi.new
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -341,10 +341,10 @@ api_instance = EVEOpenAPI::ContactsApi.new
 corporation_id = 56 # Integer | An EVE corporation ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   page: 1 # Integer | Which page of results to return
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -403,9 +403,9 @@ api_instance = EVEOpenAPI::ContactsApi.new
 corporation_id = 56 # Integer | An EVE corporation ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -467,9 +467,9 @@ contact_ids = [EVEOpenAPI::Array<Integer>.new] # Array<Integer> | A list of cont
 standing = 3.4 # Float | Standing for the contact
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
+  datasource: 'tranquility', # String | The server name you would like data from
   label_ids: [56], # Array<Integer> | Add custom labels to the new contact
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
   watched: false # BOOLEAN | Whether the contact should be watched, note this is only effective on characters
 }
 
@@ -535,9 +535,9 @@ contact_ids = [EVEOpenAPI::Array<Integer>.new] # Array<Integer> | A list of cont
 standing = 3.4 # Float | Standing for the contact
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
+  datasource: 'tranquility', # String | The server name you would like data from
   label_ids: [56], # Array<Integer> | Add custom labels to the contact
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
   watched: false # BOOLEAN | Whether the contact should be watched, note this is only effective on characters
 }
 

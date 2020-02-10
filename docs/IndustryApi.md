@@ -36,10 +36,10 @@ api_instance = EVEOpenAPI::IndustryApi.new
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   include_completed: true, # BOOLEAN | Whether to retrieve completed character industry jobs. Only includes jobs from the past 90 days
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -98,10 +98,10 @@ api_instance = EVEOpenAPI::IndustryApi.new
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   page: 1 # Integer | Which page of results to return
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -160,10 +160,10 @@ api_instance = EVEOpenAPI::IndustryApi.new
 corporation_id = 56 # Integer | An EVE corporation ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   page: 1 # Integer | Which page of results to return
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -222,10 +222,10 @@ api_instance = EVEOpenAPI::IndustryApi.new
 corporation_id = 56 # Integer | An EVE corporation ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   page: 1 # Integer | Which page of results to return
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -286,10 +286,10 @@ corporation_id = 56 # Integer | An EVE corporation ID
 observer_id = 789 # Integer | A mining observer id
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   page: 1 # Integer | Which page of results to return
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -349,11 +349,11 @@ api_instance = EVEOpenAPI::IndustryApi.new
 corporation_id = 56 # Integer | An EVE corporation ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
   include_completed: false, # BOOLEAN | Whether to retrieve completed corporation industry jobs. Only includes jobs from the past 90 days
   page: 1 # Integer | Which page of results to return
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -406,8 +406,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::IndustryApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -456,8 +456,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::IndustryApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin

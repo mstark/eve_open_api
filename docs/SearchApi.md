@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 Search on a string
 
-Search for entities that match a given sub-string.  --- Alternate route: `/dev/characters/{character_id}/search/`  Alternate route: `/v3/characters/{character_id}/search/`  --- This route is cached for up to 3600 seconds
+Search for entities that match a given sub-string.  --- Alternate route: `/dev/characters/{character_id}/search/`  Alternate route: `/legacy/characters/{character_id}/search/`  Alternate route: `/v3/characters/{character_id}/search/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 ```ruby
@@ -27,19 +27,19 @@ end
 
 api_instance = EVEOpenAPI::SearchApi.new
 
-categories = ["categories_example"] # Array<String> | Type of entities to search for
+categories = ['categories_example'] # Array<String> | Type of entities to search for
 
 character_id = 56 # Integer | An EVE character ID
 
-search = "search_example" # String | The string to search on
+search = 'search_example' # String | The string to search on
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
   strict: false, # BOOLEAN | Whether the search should be a strict match
-  token: "token_example" # String | Access token to use if unable to set a header
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -85,7 +85,7 @@ Name | Type | Description  | Notes
 
 Search on a string
 
-Search for entities that match a given sub-string.  --- Alternate route: `/dev/search/`  Alternate route: `/v2/search/`  --- This route is cached for up to 3600 seconds
+Search for entities that match a given sub-string.  --- Alternate route: `/dev/search/`  Alternate route: `/legacy/search/`  Alternate route: `/v2/search/`  --- This route is cached for up to 3600 seconds
 
 ### Example
 ```ruby
@@ -94,15 +94,15 @@ require 'eve_open_api'
 
 api_instance = EVEOpenAPI::SearchApi.new
 
-categories = ["categories_example"] # Array<String> | Type of entities to search for
+categories = ['categories_example'] # Array<String> | Type of entities to search for
 
-search = "search_example" # String | The string to search on
+search = 'search_example' # String | The string to search on
 
 opts = { 
-  accept_language: "en-us", # String | Language to use in the response
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  language: "en-us" # String | Language to use in the response, takes precedence over Accept-Language
+  accept_language: 'en-us', # String | Language to use in the response
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  language: 'en-us' # String | Language to use in the response, takes precedence over Accept-Language
   strict: false # BOOLEAN | Whether the search should be a strict match
 }
 

@@ -28,9 +28,9 @@ origin = 56 # Integer | origin solar system ID
 opts = { 
   avoid: [56], # Array<Integer> | avoid solar system ID(s)
   connections: [EVEOpenAPI::Array<Integer>.new], # Array<Array<Integer>> | connected solar system pairs
-  datasource: "tranquility", # String | The server name you would like data from
-  flag: "shortest", # String | route security preference
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  flag: 'shortest', # String | route security preference
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin

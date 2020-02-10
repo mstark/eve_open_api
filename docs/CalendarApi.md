@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 List calendar event summaries
 
-Get 50 event summaries from the calendar. If no from_event ID is given, the resource will return the next 50 chronological event summaries from now. If a from_event ID is specified, it will return the next 50 chronological event summaries from after that event  --- Alternate route: `/dev/characters/{character_id}/calendar/`  Alternate route: `/legacy/characters/{character_id}/calendar/`  Alternate route: `/v1/characters/{character_id}/calendar/`  --- This route is cached for up to 5 seconds
+Get 50 event summaries from the calendar. If no from_event ID is given, the resource will return the next 50 chronological event summaries from now. If a from_event ID is specified, it will return the next 50 chronological event summaries from after that event  --- Alternate route: `/legacy/characters/{character_id}/calendar/`  Alternate route: `/v1/characters/{character_id}/calendar/`  --- This route is cached for up to 5 seconds
 
 ### Example
 ```ruby
@@ -32,10 +32,10 @@ api_instance = EVEOpenAPI::CalendarApi.new
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
+  datasource: 'tranquility', # String | The server name you would like data from
   from_event: 56, # Integer | The event ID to retrieve events from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 
 Get an event
 
-Get all the information for a specific event  --- Alternate route: `/dev/characters/{character_id}/calendar/{event_id}/`  Alternate route: `/v3/characters/{character_id}/calendar/{event_id}/`  --- This route is cached for up to 5 seconds
+Get all the information for a specific event  --- Alternate route: `/v3/characters/{character_id}/calendar/{event_id}/`  --- This route is cached for up to 5 seconds
 
 ### Example
 ```ruby
@@ -96,9 +96,9 @@ character_id = 56 # Integer | An EVE character ID
 event_id = 56 # Integer | The id of the event requested
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 
 Get attendees
 
-Get all invited attendees for a given event  --- Alternate route: `/dev/characters/{character_id}/calendar/{event_id}/attendees/`  Alternate route: `/legacy/characters/{character_id}/calendar/{event_id}/attendees/`  Alternate route: `/v1/characters/{character_id}/calendar/{event_id}/attendees/`  --- This route is cached for up to 600 seconds
+Get all invited attendees for a given event  --- Alternate route: `/legacy/characters/{character_id}/calendar/{event_id}/attendees/`  Alternate route: `/v1/characters/{character_id}/calendar/{event_id}/attendees/`  --- This route is cached for up to 600 seconds
 
 ### Example
 ```ruby
@@ -159,9 +159,9 @@ character_id = 56 # Integer | An EVE character ID
 event_id = 56 # Integer | The id of the event requested
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 
 Respond to an event
 
-Set your response status to an event  --- Alternate route: `/dev/characters/{character_id}/calendar/{event_id}/`  Alternate route: `/v3/characters/{character_id}/calendar/{event_id}/` 
+Set your response status to an event  --- Alternate route: `/v3/characters/{character_id}/calendar/{event_id}/`   --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#PUT-/characters/{character_id}/calendar/{event_id}/)
 
 ### Example
 ```ruby
@@ -224,8 +224,8 @@ event_id = 56 # Integer | The ID of the event requested
 response = EVEOpenAPI::PutCharactersCharacterIdCalendarEventIdResponse.new # PutCharactersCharacterIdCalendarEventIdResponse | The response value to set, overriding current value
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin

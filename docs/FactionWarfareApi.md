@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 Overview of a character involved in faction warfare
 
-Statistical overview of a character involved in faction warfare  --- Alternate route: `/dev/characters/{character_id}/fw/stats/`  Alternate route: `/legacy/characters/{character_id}/fw/stats/`  Alternate route: `/v1/characters/{character_id}/fw/stats/`  --- This route expires daily at 11:05
+Statistical overview of a character involved in faction warfare  --- Alternate route: `/legacy/characters/{character_id}/fw/stats/`  Alternate route: `/v1/characters/{character_id}/fw/stats/`  --- This route expires daily at 11:05
 
 ### Example
 ```ruby
@@ -36,9 +36,9 @@ api_instance = EVEOpenAPI::FactionWarfareApi.new
 character_id = 56 # Integer | An EVE character ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 
 Overview of a corporation involved in faction warfare
 
-Statistics about a corporation involved in faction warfare  --- Alternate route: `/dev/corporations/{corporation_id}/fw/stats/`  Alternate route: `/legacy/corporations/{corporation_id}/fw/stats/`  Alternate route: `/v1/corporations/{corporation_id}/fw/stats/`  --- This route expires daily at 11:05
+Statistics about a corporation involved in faction warfare  --- Alternate route: `/legacy/corporations/{corporation_id}/fw/stats/`  Alternate route: `/v1/corporations/{corporation_id}/fw/stats/`  --- This route expires daily at 11:05  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/fw/stats/)
 
 ### Example
 ```ruby
@@ -96,9 +96,9 @@ api_instance = EVEOpenAPI::FactionWarfareApi.new
 corporation_id = 56 # Integer | An EVE corporation ID
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
-  token: "token_example" # String | Access token to use if unable to set a header
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  token: 'token_example' # String | Access token to use if unable to set a header
 }
 
 begin
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 
 List of the top factions in faction warfare
 
-Top 4 leaderboard of factions for kills and victory points separated by total, last week and yesterday  --- Alternate route: `/dev/fw/leaderboards/`  Alternate route: `/legacy/fw/leaderboards/`  Alternate route: `/v1/fw/leaderboards/`  --- This route expires daily at 11:05
+Top 4 leaderboard of factions for kills and victory points separated by total, last week and yesterday  --- Alternate route: `/legacy/fw/leaderboards/`  Alternate route: `/v1/fw/leaderboards/`  --- This route expires daily at 11:05
 
 ### Example
 ```ruby
@@ -149,8 +149,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::FactionWarfareApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -189,7 +189,7 @@ No authorization required
 
 List of the top pilots in faction warfare
 
-Top 100 leaderboard of pilots for kills and victory points separated by total, last week and yesterday  --- Alternate route: `/dev/fw/leaderboards/characters/`  Alternate route: `/legacy/fw/leaderboards/characters/`  Alternate route: `/v1/fw/leaderboards/characters/`  --- This route expires daily at 11:05
+Top 100 leaderboard of pilots for kills and victory points separated by total, last week and yesterday  --- Alternate route: `/legacy/fw/leaderboards/characters/`  Alternate route: `/v1/fw/leaderboards/characters/`  --- This route expires daily at 11:05
 
 ### Example
 ```ruby
@@ -199,8 +199,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::FactionWarfareApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -239,7 +239,7 @@ No authorization required
 
 List of the top corporations in faction warfare
 
-Top 10 leaderboard of corporations for kills and victory points separated by total, last week and yesterday  --- Alternate route: `/dev/fw/leaderboards/corporations/`  Alternate route: `/legacy/fw/leaderboards/corporations/`  Alternate route: `/v1/fw/leaderboards/corporations/`  --- This route expires daily at 11:05
+Top 10 leaderboard of corporations for kills and victory points separated by total, last week and yesterday  --- Alternate route: `/legacy/fw/leaderboards/corporations/`  Alternate route: `/v1/fw/leaderboards/corporations/`  --- This route expires daily at 11:05
 
 ### Example
 ```ruby
@@ -249,8 +249,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::FactionWarfareApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -289,7 +289,7 @@ No authorization required
 
 An overview of statistics about factions involved in faction warfare
 
-Statistical overviews of factions involved in faction warfare  --- Alternate route: `/dev/fw/stats/`  Alternate route: `/legacy/fw/stats/`  Alternate route: `/v1/fw/stats/`  --- This route expires daily at 11:05
+Statistical overviews of factions involved in faction warfare  --- Alternate route: `/legacy/fw/stats/`  Alternate route: `/v1/fw/stats/`  --- This route expires daily at 11:05
 
 ### Example
 ```ruby
@@ -299,8 +299,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::FactionWarfareApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -339,7 +339,7 @@ No authorization required
 
 Ownership of faction warfare systems
 
-An overview of the current ownership of faction warfare solar systems  --- Alternate route: `/dev/fw/systems/`  Alternate route: `/v2/fw/systems/`  --- This route is cached for up to 1800 seconds
+An overview of the current ownership of faction warfare solar systems  --- Alternate route: `/v2/fw/systems/`  --- This route is cached for up to 1800 seconds
 
 ### Example
 ```ruby
@@ -349,8 +349,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::FactionWarfareApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
@@ -389,7 +389,7 @@ No authorization required
 
 Data about which NPC factions are at war
 
-Data about which NPC factions are at war  --- Alternate route: `/dev/fw/wars/`  Alternate route: `/legacy/fw/wars/`  Alternate route: `/v1/fw/wars/`  --- This route expires daily at 11:05
+Data about which NPC factions are at war  --- Alternate route: `/legacy/fw/wars/`  Alternate route: `/v1/fw/wars/`  --- This route expires daily at 11:05
 
 ### Example
 ```ruby
@@ -399,8 +399,8 @@ require 'eve_open_api'
 api_instance = EVEOpenAPI::FactionWarfareApi.new
 
 opts = { 
-  datasource: "tranquility", # String | The server name you would like data from
-  if_none_match: "if_none_match_example", # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
+  datasource: 'tranquility', # String | The server name you would like data from
+  if_none_match: 'if_none_match_example', # String | ETag from a previous request. A 304 will be returned if this matches the current ETag
 }
 
 begin
