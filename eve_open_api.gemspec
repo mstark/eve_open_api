@@ -25,14 +25,14 @@ Gem::Specification.new do |s|
   s.summary     = "An OpenAPI for EVE Online."
   s.description = "An OpenAPI for EVE Online. https://esi.evetech.net/"
   s.license     = 'Apache-2.0'
-  s.required_ruby_version = ">= 1.9"
+  s.required_ruby_version = ">= 3.0"
 
   s.add_runtime_dependency 'typhoeus', '~> 1.0', '>= 1.0.1'
   s.add_runtime_dependency 'json', '~> 2.1', '>= 2.1.0'
 
   s.add_development_dependency 'rspec', '~> 3.6', '>= 3.6.0'
   s.add_development_dependency 'vcr', '~> 3.0', '>= 3.0.1'
-  s.add_development_dependency 'webmock', '~> 1.24', '>= 1.24.3'
+  s.add_development_dependency 'webmock', '~> 3.14'
   # s.add_development_dependency 'autotest', '~> 4.4', '>= 4.4.6'
   # s.add_development_dependency 'autotest-rails-pure', '~> 4.1', '>= 4.1.2'
   # s.add_development_dependency 'autotest-growl', '~> 0.2', '>= 0.2.16'

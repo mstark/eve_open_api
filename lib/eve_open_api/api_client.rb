@@ -15,7 +15,7 @@ require 'json'
 require 'logger'
 require 'tempfile'
 require 'typhoeus'
-require 'uri'
+require 'addressable'
 
 module EVEOpenAPI
   class ApiClient
@@ -264,7 +264,7 @@ module EVEOpenAPI
     def build_request_url(path)
       # Add leading and trailing slashes to path
       path = "/#{path}".gsub(/\/+/, '/')
-      URI.encode(@config.base_url + path)
+      Addressable::URI.encode(@config.base_url + path)
     end
 
     # Builds the HTTP request body
